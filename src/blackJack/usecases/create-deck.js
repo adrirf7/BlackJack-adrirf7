@@ -27,7 +27,7 @@ export const createDeck = () => {
 export const createFaceDownDeck = () => {
   const deckContainer = document.querySelector("#deck-container");
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 3; i++) {
     const faceCardImg = document.createElement("img");
     faceCardImg.src = `assets/cartas/red_back.png`;
     faceCardImg.classList.add("game-card");

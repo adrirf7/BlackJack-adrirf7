@@ -1,5 +1,5 @@
 import { accumulatePoints, takeCard, createCard } from "./index";
-import { cardsDiv, HTMLdealerPoints } from "..";
+import { dealerCardsDiv, HTMLdealerPoints } from "..";
 
 /**
  *
@@ -22,7 +22,7 @@ export const dealerTurn = (minPoints, deck, dealer, dealerAces, playerPoints, de
   let dealerPoints = playerPoints[dealer];
 
   if (dealerHiddenCard) {
-    const dealerCards = cardsDiv[dealer].querySelectorAll(".game-card");
+    const dealerCards = dealerCardsDiv.querySelectorAll(".game-card");
     const lastCard = dealerCards[dealerCards.length - 1];
     lastCard.src = `assets/cartas/${dealerHiddenCard}.png`;
   }

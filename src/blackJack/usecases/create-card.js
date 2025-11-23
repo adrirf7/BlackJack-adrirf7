@@ -1,4 +1,4 @@
-import { cardsDiv } from "../index";
+import { playerCardsDiv, dealerCardsDiv } from "../index";
 /**
  *
  * @param {string} card
@@ -11,7 +11,7 @@ export const createCard = (card, turn, pos) => {
 
   // Obtener posiciones
   const deckContainer = document.getElementById("deck-container");
-  const targetContainer = cardsDiv[turn];
+  const targetContainer = turn === 0 ? playerCardsDiv : dealerCardsDiv;
 
   const deckRect = deckContainer.getBoundingClientRect();
 

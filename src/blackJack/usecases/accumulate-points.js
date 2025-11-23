@@ -1,5 +1,5 @@
 import { cardValue } from "./index";
-import { HTMLplayersPoints } from "../index";
+import { HTMLplayerPoints, HTMLdealerPoints } from "../index";
 
 /**
  *
@@ -28,7 +28,12 @@ export const accumulatePoints = (card, turn, pAces, playerPoints) => {
     pAces--;
   }
 
-  HTMLplayersPoints[turn].innerHTML = playerPoints[turn]; //Insertar los puntos
+  //Insertar los puntos según el turno (0 = jugador, 1 = dealer)
+  if (turn === 0) {
+    HTMLplayerPoints.innerHTML = playerPoints[turn];
+  } else {
+    HTMLdealerPoints.innerHTML = playerPoints[turn];
+  }
 
   return { points: playerPoints[turn], pAces };
 };

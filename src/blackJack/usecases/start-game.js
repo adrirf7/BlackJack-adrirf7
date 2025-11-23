@@ -1,4 +1,4 @@
-import { HTMLplayersPoints, btnTake, btnStop, cardsDiv, HTMLdealerPoints } from "..";
+import { HTMLplayerPoints, btnTake, btnStop, playerCardsDiv, dealerCardsDiv, HTMLdealerPoints } from "..";
 import { createDeck, takeCard, createCard, accumulatePoints, createFaceDownDeck } from "./index";
 
 /**
@@ -28,14 +28,22 @@ export const startGame = (players = 2, deck, playerPoints, dealer, playerAces, d
   dealerAces = 0;
 
   //Limpiar el html
-  HTMLplayersPoints.forEach((elem) => (elem.innerHTML = 0)); //Puntos
-  cardsDiv.forEach((elem) => (elem.innerHTML = "")); //Cartas
+  HTMLplayerPoints.innerHTML = 0; //Puntos del jugador
+  HTMLdealerPoints.innerHTML = 0; //Puntos del dealer
+  playerCardsDiv.innerHTML = ""; //Cartas del jugador
+  dealerCardsDiv.innerHTML = ""; //Cartas del dealer
+  document.getElementById("deck-container").innerHTML = ""; //Limpiar baraja visual
   HTMLdealerPoints.style.display = "none"; //Ocultar puntos del dealer
 
   //Rehabilitar botones
   btnTake.disabled = false;
   btnStop.disabled = false;
   let hiddenCard = null;
+
+  //Ocultar overlays
+  document.getElementById("overlay-win").style.display = "none";
+  document.getElementById("overlay-lose").style.display = "none";
+  document.getElementById("overlay-tie").style.display = "none";
 
   createFaceDownDeck();
 

@@ -19,11 +19,12 @@ export const btnNewGame = document.querySelector("#btn-new-game"),
   btnTake = document.querySelector("#btn-take"),
   btnStop = document.querySelector("#btn-stop");
 //Puntos
-export const HTMLplayersPoints = document.querySelectorAll("#players-points"),
-  HTMLdealerPoints = document.querySelector(".dealer-points");
+export const HTMLplayerPoints = document.querySelector("#player-points"),
+  HTMLdealerPoints = document.querySelector("#dealer-points");
 
 //Imagnes de las cartas
-export const cardsDiv = document.querySelectorAll(".div-cards");
+export const playerCardsDiv = document.querySelector("#player-cards"),
+  dealerCardsDiv = document.querySelector("#dealer-cards");
 
 //? Eventos De los botones
 //* Nuevo Juego
