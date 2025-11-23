@@ -29,7 +29,7 @@ export const createFaceDownDeck = () => {
 
   for (let i = 0; i < 10; i++) {
     const faceCardImg = document.createElement("img");
-    faceCardImg.src = `./public/assets/cartas/red_back.png`;
+    faceCardImg.src = `assets/cartas/red_back.png`;
     faceCardImg.classList.add("game-card");
     deckContainer.append(faceCardImg);
   }
