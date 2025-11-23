@@ -229,3 +229,123 @@ body {
   color: #c0c0c0;
   margin-bottom: 10px;
 }
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 2px;
+  }
+
+  .game-card {
+    width: 90px;
+    margin-left: -35px;
+  }
+
+  #dealer-cards,
+  #player-cards,
+  #deck-container {
+    min-height: 160px;
+    padding: 10px;
+    margin-top: 8px;
+  }
+
+  #deck-container {
+    min-width: 120px;
+    max-width: 140px;
+    margin-top: 20px;
+  }
+
+  .game-points {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .game-points small {
+    font-size: 20px;
+  }
+
+  .player-buttons {
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .overlay-content {
+    padding: 30px 25px;
+    margin: 0 15px;
+  }
+
+  .overlay-title {
+    font-size: 32px;
+  }
+
+  .overlay-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 16px;
+    padding: 8px;
+    letter-spacing: 1px;
+  }
+
+  .game-card {
+    width: 70px;
+    margin-left: -25px;
+  }
+
+  #dealer-cards,
+  #player-cards,
+  #deck-container {
+    min-height: 130px;
+    padding: 8px;
+  }
+
+  #deck-container {
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  .game-points {
+    font-size: 16px;
+  }
+
+  .game-points small {
+    font-size: 18px;
+  }
+
+  .player-buttons {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .overlay-content {
+    padding: 25px 20px;
+  }
+
+  .overlay-title {
+    font-size: 28px;
+  }
+
+  .overlay-subtitle {
+    font-size: 14px;
+  }
+}
