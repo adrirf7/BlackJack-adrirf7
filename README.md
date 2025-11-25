@@ -55,7 +55,7 @@ npm run build
 
 ## 🎯 Objetivo del Proyecto
 
-Proyecto desarrollado para demostrar capacidades en:
+Proyecto desarrollado para ampliar capacidades en:
 
 - JavaScript moderno y patrones de diseño
 - Arquitectura de código escalable y mantenible
